@@ -1,0 +1,34 @@
+#tunnel {
+    width: 400px;
+    height: 100px;
+    padding: 60px;
+    margin-left: 500px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 127, 195);
+}
+
+#train-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#startBtn {
+    width: 100px;
+    height: 40px;
+    color: green;
+}
+
+/* dynamic div style */
+
+.border {
+    border: 1px solid grey;
+  }
+  
+  .pad {
+    padding: 15px;
+  }
