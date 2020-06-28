@@ -6,12 +6,15 @@
 let startTrain = function (event) {
     event.preventDefault();
 
+    let enteredTrainCount = parseInt(document.getElementById("trainCount").value);
+    let enteredTunnelCapacity = parseInt(document.getElementById("tunnelcapacity").value);
+
     /**
  * Generate dynamic div (TRAIN) conditionally
  */
     let tunnelCapacity = [];
 
-    for (let trainCount = 1; trainCount <= 10; trainCount++) {
+    for (let trainCount = 1; trainCount <= enteredTrainCount; trainCount++) {
 
         /** Condition for play button */
         // var btn = document.getElementById('startBtn');
@@ -21,7 +24,7 @@ let startTrain = function (event) {
         // }
 
         setTimeout(() => {
-            if (tunnelCapacity.length < 3) {
+            if (tunnelCapacity.length < enteredTunnelCapacity) {
                 tunnelCapacity.unshift(trainCount);
                 addTrain(tunnelCapacity);
             } else {
@@ -54,6 +57,6 @@ let startTrain = function (event) {
         console.log("trainClass", trainList)
     }
 
-
-
+    document.getElementById("trainCount").value = "" ;
+    document.getElementById("tunnelcapacity").value = "";
 }

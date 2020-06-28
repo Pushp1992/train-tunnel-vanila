@@ -10,9 +10,22 @@
   </head>
   <body>
 
+    <ul>
+      <p><b><u>Features:</u></b></p>
+      <li>Configurable Tunnel Capacity</li>
+      <li>Configurable Train Count</li>
+      <li>First In First Out DS used</li>
+      <li>Addintion / removal of train into Tunnel</li>
+    </ul>
+
     <div id="tunnel"></div>
 
-    <div id="train-btn-div">
+    <div class="train-btn-div">
+      <input type="number" class="ipBtn" name="train count" id="trainCount" placeholder="Enter Train Count"/> &nbsp; &nbsp;
+      <input type="number" class="ipBtn" name="tunnel capacity" id="tunnelcapacity" placeholder="Enter Tunnel capacity"/>
+    </div>
+
+    <div class="train-btn-div">
       <button id="startBtn" name="start train" onclick="startTrain(event)">Start Train</button>
     </div>
 
